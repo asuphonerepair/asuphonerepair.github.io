@@ -1,0 +1,176 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+   ul.topnav {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+   }
+
+   ul.topnav li {float: left;}
+
+   ul.topnav li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+
+   ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+   ul.topnav li a.active {background-color: #04AA6D;}
+
+   ul.topnav li.right {float: right;}
+
+   @media screen and (max-width: 600px) {
+     ul.topnav li.right,
+     ul.topnav li {float: none;}
+
+   }
+
+main {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+body {
+  background-color:white;
+  font-family: arial;
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-family:arial;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+h2 {
+  text-align: center;
+   font-family:arial;
+  font-size: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+.info {
+  width: 50%;
+  background-color: #FFC627;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:10px;
+  border:8px solid #8C1D40;
+  padding: 1vw;
+}
+
+  .epic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section {
+    width: 50%;
+    height: 100%;
+  }
+
+  .flex-container2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* add this line */
+  }
+
+@media screen and (max-width: 600px) {
+  .info {
+    width:100%;
+    padding:0vw;
+    margin-left: -1.5vw;
+    margin-right: 1vw;
+    border-radius:0px;
+}
+
+  .flex-container2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%; /* add this line */
+    }
+
+  }
+
+
+
+hr {
+  height: 2px;
+  background-color: #8C1D40;
+  border-color: #8C1D40;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* add this line */
+}
+
+
+.flex-container > div {
+  text-align: center;
+  padding: 10px; /* adjust as needed */
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}
+
+
+   /* CSS for screens wider than 600px */
+@media screen and (min-width: 601px) {
+  .telno {
+    display: block; /* Display .telno by default */
+  }
+
+  .telyes {
+    display: none; /* Hide .telyes by default */
+  }
+}
+
+/* CSS for screens 600px or narrower (e.g., smartphones) */
+@media screen and (max-width: 600px) {
+  .telno {
+    display: none; /* Hide .telno on smaller screens */
+  }
+
+  .telyes {
+    display: block; /* Display .telyes on smaller screens */
+  }
+}
