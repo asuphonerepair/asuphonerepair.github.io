@@ -60,6 +60,24 @@ p {
   text-align: center;
 }
 
+th, td {
+  padding: 10px;
+  border: 5px solid #8C1D40; /* Add border style here */
+  text-align: left;
+  background-color: #FFA500;
+}
+
+table {
+  border: 5px solid #8C1D40; /* Add border style here */
+  font-family: 'Varela Round';
+  border-radius: 10px;
+  border-collapse: collapse;
+  padding: 10px;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .info {
   width: 50%;
   background-color: #FFC627;
